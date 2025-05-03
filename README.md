@@ -19,8 +19,9 @@
 ---
 
 ## 🖱️ GUI 工具（適合一般使用者）| GUI Tool for Everyone
+📦 [點我下載免安裝版本](https://github.com/TengWei-Hung/PhotoOrganizer/releases/download/v1.0.0/PhotoOrganizer_GUI_v1.0.zip)
 
-### `gui/photo_gui_launcher.exe`
+### `photo_gui_launcher.exe`
 如果你不會寫程式，只要雙擊這個執行檔就能開始使用。  
 If you're not familiar with Python — just double-click to run!
 
