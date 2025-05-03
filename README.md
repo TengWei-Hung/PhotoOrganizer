@@ -9,7 +9,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
-[![Downloads](https://img.shields.io/github/downloads/TengWei-Hung/PhotoOrganizer/total.svg)](https://github.com/TengWei-Hung/PhotoOrganizer/releases)
+[![GitHub all releases](https://img.shields.io/github/downloads/TengWei-Hung/PhotoOrganizer/total.svg?cacheSeconds=60)](https://github.com/TengWei-Hung/PhotoOrganizer/releases)
 
 ---
 
