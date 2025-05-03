@@ -9,13 +9,12 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
-[![Downloads](https://img.shields.io/github/downloads/TengWei-Hung/photo-organizer/total.svg)]()
+[![Downloads](https://img.shields.io/github/downloads/TengWei-Hung/PhotoOrganizer/total.svg)](https://github.com/TengWei-Hung/PhotoOrganizer/releases)
 
 ---
 
 ## 🌐 語言版本 | Language Versions
-- 🇬🇧 English & 中文說明（本頁）
-- 🇹🇼 [繁體中文版（未來可加入）](README.zh-TW.md)
+- 🇬🇧 English & 🇹🇼 繁體中文說明（本頁）
 
 ---
 
