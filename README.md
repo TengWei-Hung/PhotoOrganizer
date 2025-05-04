@@ -18,6 +18,12 @@
 
 ---
 
+# ❗初次執行可能會被防毒軟體警告，這是因為沒有數位簽章(代價約 100～500 USD/年），請放心使用，或將其加入信任清單。
+# ❗When running this tool for the first time, your antivirus software may show a warning. This is because the executable is not digitally signed (code signing certificates cost around $100–$500 USD/year).
+Please rest assured — the tool is safe to use, or you can add it to your antivirus whitelist.
+
+---
+
 ## 🖱️ GUI 工具（適合一般使用者）| GUI Tool for Everyone
 📦 [點我下載免安裝版本](https://github.com/TengWei-Hung/PhotoOrganizer/releases/download/v1.0.0/PhotoOrganizer_GUI_v1.0.zip)
 
