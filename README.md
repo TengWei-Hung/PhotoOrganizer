@@ -28,6 +28,15 @@ Please rest assured — the tool is safe to use, or you can add it to your antiv
 ## 🖱️ GUI 工具（適合一般使用者）| GUI Tool for Everyone
 📦 [點我下載免安裝版本](https://github.com/TengWei-Hung/PhotoOrganizer/releases/download/v1.0.0/PhotoOrganizer_GUI_v1.0.zip)
 
+### macOS `.app` build
+想在 macOS 上使用 GUI？請安裝 `pyinstaller` 並執行：
+
+```bash
+pip install pyinstaller
+bash scripts/build_mac_gui.sh
+```
+成功後會在 `dist/` 資料夾取得 `PhotoOrganizer.app` 以及壓縮檔。
+
 ### `photo_gui_launcher.exe`
 如果你不會寫程式，只要雙擊這個執行檔就能開始使用。  
 If you're not familiar with Python — just double-click to run!
