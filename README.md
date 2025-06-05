@@ -2,6 +2,15 @@
   <img src="logo/logo.png" width="180" alt="Photo Organizer logo">
 </p>
 
+## 📦 2025-06-05 更新 PhotoOrganizer_GUI_v1.1 | Update v1.1
+
+- ✅ 新增「是否包含子資料夾」選項，可控制是否一併分類子資料夾內的照片  
+  ➕ Added option to include or exclude **subfolders** when organizing photos  
+- 🌐 新增語言切換按鈕，支援「繁體中文 / English」介面（預設為繁中）  
+  🌍 Interface now supports **Traditional Chinese / English** toggle (default: zh-TW)
+
+---
+
 # 📂 Photo Organizer Toolkit｜照片整理工具包
 
 🧹 Automatically sort your photos by year, month, or day — with just one click.  
@@ -26,7 +35,7 @@ Please rest assured — the tool is safe to use, or you can add it to your antiv
 ---
 
 ## 🖱️ GUI 工具（適合一般使用者）| GUI Tool for Everyone
-📦 [點我下載免安裝版本](https://github.com/TengWei-Hung/PhotoOrganizer/releases/download/v1.0.0/PhotoOrganizer_GUI_v1.0.zip)
+📦 [點我下載免安裝版本](https://github.com/TengWei-Hung/PhotoOrganizer/releases/download/v1.1.0/PhotoOrganizer_GUI_v1.1.zip)
 
 ### `photo_gui_launcher.exe`
 如果你不會寫程式，只要雙擊這個執行檔就能開始使用。  
@@ -104,6 +113,15 @@ source_folder = r"D:\Your\Folder\Path"
 執行方式 | Run:
 ```bash
 python script_name.py
+```
+---
+
+### Windows `.exe` build
+在 TERMINAL 輸入以下指令，即可透過 Pillow 與 pyinstaller 打包 Windows 用的 GUI 執行檔：
+You can use the following command to package the graphical interface .py file into a Windows .exe using Pillow and PyInstaller.
+
+```bash
+pyinstaller --noconsole --onefile ./gui/photo_gui_launcher.py
 ```
 
 ---
