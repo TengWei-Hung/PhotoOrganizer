@@ -18,9 +18,21 @@ def get_exif_date(file_path):
         print(f"Failed to read EXIF date from {file_path}: {e}")
     return None
 
-def organize_photos_by_year(source_folder):
-    for filename in os.listdir(source_folder):
-        file_path = os.path.join(source_folder, filename)
+def _iter_files(source_folder, exclude_subfolders):
+    if exclude_subfolders:
+        for filename in os.listdir(source_folder):
+            file_path = os.path.join(source_folder, filename)
+            if os.path.isfile(file_path):
+                yield file_path
+    else:
+        for root, _, files in os.walk(source_folder):
+            for filename in files:
+                yield os.path.join(root, filename)
+
+
+def organize_photos_by_year(source_folder, exclude_subfolders=True):
+    for file_path in _iter_files(source_folder, exclude_subfolders):
+        filename = os.path.basename(file_path)
 
         if not os.path.isfile(file_path):
             continue
@@ -43,4 +55,4 @@ def organize_photos_by_year(source_folder):
 
 # ⚠️ Modify this to the path of your source photo folder
 source_folder = r"D:\Photos\2025.05.03_CellphoneBackup\CameraRoll"
-organize_photos_by_year(source_folder)
+organize_photos_by_year(source_folder, exclude_subfolders=True)

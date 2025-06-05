@@ -24,10 +24,16 @@ def get_file_date(file_path):
     return datetime.fromtimestamp(os.path.getmtime(file_path))
 
 # === 照片分類主邏輯 ===
-def organize_photos(folder, mode):
-    for root, _, files in os.walk(folder):
+def organize_photos(folder, mode, exclude_subfolders=True):
+    if exclude_subfolders:
+        walkers = [(folder, [], os.listdir(folder))]
+    else:
+        walkers = os.walk(folder)
+    for root, _, files in walkers:
         for filename in files:
             file_path = os.path.join(root, filename)
+            if not os.path.isfile(file_path):
+                continue
             if not filename.lower().endswith(('.jpg', '.jpeg', '.png', '.heic', '.mov', '.mp4')):
                 continue
 
@@ -62,10 +68,11 @@ def start_gui():
     def run_sorting():
         folder = folder_var.get()
         mode = mode_var.get()
+        exclude = exclude_var.get()
         if not folder:
             messagebox.showwarning("Warning", "Please select a folder.")
             return
-        organize_photos(folder, mode)
+        organize_photos(folder, mode, exclude_subfolders=exclude)
         messagebox.showinfo("Done", f"Photos organized by {mode}!")
 
     root = tk.Tk()
@@ -82,7 +89,10 @@ def start_gui():
     tk.Radiobutton(root, text="Month", variable=mode_var, value="month").grid(row=2, column=1, sticky="w")
     tk.Radiobutton(root, text="Day", variable=mode_var, value="day").grid(row=3, column=1, sticky="w")
 
-    tk.Button(root, text="Start Organizing", command=run_sorting, bg="lightblue").grid(row=4, column=1, pady=10)
+    exclude_var = tk.BooleanVar(value=True)
+    tk.Checkbutton(root, text="是否排除子資料夾", variable=exclude_var).grid(row=4, column=1, sticky="w", pady=5)
+
+    tk.Button(root, text="Start Organizing", command=run_sorting, bg="lightblue").grid(row=5, column=1, pady=10)
 
     root.mainloop()
 
