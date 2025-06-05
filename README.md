@@ -27,10 +27,16 @@
 
 ---
 
+❗初次執行可能會被防毒軟體警告，這是因為沒有數位簽章(代價約 100～500 USD/年），請放心使用，或將其加入信任清單。
 ⚠️When running this tool for the first time, your antivirus software may show a warning. This is because the executable is not digitally signed (code signing certificates cost around $100–$500 USD/year).
 Please rest assured — the tool is safe to use, or you can add it to your antivirus whitelist.
 
-❗初次執行可能會被防毒軟體警告，這是因為沒有數位簽章(代價約 100～500 USD/年），請放心使用，或將其加入信任清單。
+❗如果點擊後彈出「Windows 已保護您的電腦
+Microsoft Defender SmartScreen 已防止某個無法辨識的應用程式啟動。執行此應用程式可能會讓您的電腦暴露在風險中。」，請點擊「其他資訊、仍要執行」。 
+⚠️If you see a message saying "Windows protected your PC" after launching the app, with the following content:
+Microsoft Defender SmartScreen prevented an unrecognized app from starting.
+Running this app might put your PC at risk.
+Please click "More info", then choose "Run anyway" to proceed.
 
 ---
 
